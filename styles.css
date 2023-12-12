@@ -1,0 +1,139 @@
+body {
+   background: rgba(224, 229, 227, 1);
+}
+
+input {
+   color: white;
+}
+canvas {
+   margin: 1px 0px;
+   border-radius: 13px;
+   border: none;
+}
+#card {
+   user-select: none;
+   -webkit-user-drag: none;
+   background: rgba(224, 229, 227, 1);
+   margin-top: 16px;
+   margin-left: auto;
+   margin-right: auto;
+   border: none;
+   padding: 10px;
+   border-radius: 13px;
+   text-align: center;
+   width: 254px;
+   box-shadow: -2px -2px 8px 5px rgba(255, 255, 255, 0.95),
+      2px 2px 10px -1px rgba(0, 0, 0, 0.56),
+      inset 11px 9px 14px -4px rgba(255, 255, 255, 0.38);
+}
+#copy {
+   padding: 5px;
+   border-radius: 13px;
+   border: none;
+   width: 30%;
+   outline: none;
+   cursor: pointer;
+   background-color: var(--colorMain);
+   box-shadow: inset 20px 28px 50px -30px rgba(255, 255, 255, 0.87),
+      6px 6px 25px -2px rgba(56, 56, 56, 0.41),
+      -2px -2px 4px 2px rgba(255, 255, 255, 0.95);
+   transition: 100ms box-shadow;
+   font-family: "Fragment Mono", monospace;
+}
+#copy:active {
+   box-shadow: inset 20px 28px 50px -30px rgba(5, 5, 5, 0.1),
+      6px 6px 25px -2px rgba(56, 56, 56, 0.41),
+      -2px -2px 4px 2px rgba(255, 255, 255, 0.95);
+}
+#text {
+   -webkit-user-drag: none;
+   user-select: text;
+   margin-right: 10px;
+   width: 70%;
+   display: block;
+   background-color: var(--colorMain);
+   border-radius: 13px;
+   border: none;
+   outline: none;
+   padding: 5px;
+   box-shadow: inset 20px 28px 50px -30px rgba(255, 255, 255, 0.87),
+      6px 6px 25px -2px rgba(56, 56, 56, 0.41),
+      -2px -2px 4px 2px rgba(255, 255, 255, 0.95);
+}
+#text::selection {
+   background: transparent;
+   color: gray;
+}
+button {
+   padding: 4.5px;
+   display: block;
+   border-radius: 13px;
+   border: none;
+   width: 275px;
+   margin-top: 3px;
+   height: 40px;
+   background-color: rgb(38, 0, 199);
+   margin-left: auto;
+   margin-right: auto;
+   background-color: var(--colorMain);
+   font-family: "Fragment Mono", monospace;
+}
+#pop {
+   background-color: red;
+   width: 200px;
+   background-color: var(--colorMain);
+   color: white;
+   margin-left: calc(50% - 100px);
+   text-align: center;
+   border-radius: 13px;
+   margin-top: 26px;
+   padding: 10px;
+   box-shadow: inset 20px 28px 50px -30px rgba(255, 255, 255, 0.87),
+      6px 6px 25px -2px rgba(56, 56, 56, 0.41),
+      -8px -9px 15px 1px rgba(255, 255, 255, 1);
+   font-family: "Fragment Mono", monospace;
+}
+.pop {
+   transform: translateY(20px);
+   opacity: 0;
+}
+.active {
+   transition: 500ms;
+   transform: translateY(0px);
+   opacity: 100%;
+}
+#content {
+   margin-top: 20px;
+   display: flex;
+}
+#dfj {
+   box-shadow: 6px 6px 25px -2px rgba(56, 56, 56, 0.41),
+      -2px -2px 4px 2px rgba(255, 255, 255, 0.95);
+   margin-top: 30px;
+}
+#cur {
+   pointer-events: none;
+   width: 12px;
+   height: 12px;
+   position: absolute;
+   margin: auto;
+   display: block;
+   background-color: var(--colorMain);
+   padding: 0;
+   border-radius: 20px;
+   border: solid 1px white;
+}
+canvas:hover + #cur {
+   display: block;
+   user-select: none;
+}
+input {
+   font-family: "Fragment Mono", monospace;
+}
+#copyr {
+   margin-top: 20px;
+   text-transform: capitalize;
+   text-align: center;
+   font-family: Arial;
+   color: #999999;
+}
